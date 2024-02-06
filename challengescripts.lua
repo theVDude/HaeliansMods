@@ -219,7 +219,9 @@ end, ChallengeMod)
 OnAnyLoad{
     function (triggerargs)
         if ChallengeMod.ActiveChallenge == ChallengeMod.ChallengeData.LightsOut.Name then
-            CreateAnimation({Name = "DarkMode", DestinationId = CurrentRun.Hero.ObjectId})SetAlpha({ Ids = GetIds ({ Name =  "Background_Lighting_01" }), Fraction = 0, Duration = 0.1 })
+            CreateAnimation({Name = "DarkModeBig", DestinationId = CurrentRun.Hero.ObjectId}) -- Bigger version that stretches out farther from zag
+            CreateAnimation({Name = "DarkMode", DestinationId = CurrentRun.Hero.ObjectId}) -- smaller version to keep the light area tight on zag
+            SetAlpha({ Ids = GetIds ({ Name =  "Background_Lighting_01" }), Fraction = 0, Duration = 0.1 })
             SetAlpha({ Ids = GetIds ({ Name =  "FG_Lighting_01" }), Fraction = 0, Duration = 0.1 })
             SetAlpha({ Ids = GetIds ({ Name =  "FG_Lighting_02" }), Fraction = 0, Duration = 0.1 })
             SetAlpha({ Ids = GetIds ({ Name =  "Foreground_Lighting_01" }), Fraction = 0, Duration = 0.1 })

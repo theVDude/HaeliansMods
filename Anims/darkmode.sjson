@@ -30,6 +30,26 @@
       ChainTo = "DarkModeHold"
     }
     {
+      Name = "DarkModeBig"
+      FilePath = "Fx\WrathPresentationStreak\WrathVignette"
+      Type = "Constant"
+      EndAlpha = 0.99
+      StartAlpha = 0.99
+      Duration = 0
+      Scale = 25
+      ScaleX = 1.5
+      ScaleY = 1.5
+      EndFrame = 1
+      Loop = true
+      NumFrames = 1
+      StartFrame = 1
+      Material = "Unlit"
+      GroupName = "Standing"
+      SortMode = "Id"
+      LocationFromOwner = "Maintain"
+      LocationZFromOwner = "Ignore"
+    }
+    {
       Name = "DarkModeHold"
       InheritFrom = "DarkMode"
       Loop = true
