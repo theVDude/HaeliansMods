@@ -3,3 +3,6 @@ Import challengemain.lua
 Import challengescripts.lua
 Import challengedata.lua
 Import challengeinterface.lua
+
+To "Game/Animations/Fx.sjson"
+SJSON "Anims/darkmode.sjson"
