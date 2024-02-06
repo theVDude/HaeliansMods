@@ -36,7 +36,7 @@
       EndAlpha = 0.99
       StartAlpha = 0.99
       Duration = 0
-      Scale = 25
+      Scale = 40
       ScaleX = 1.5
       ScaleY = 1.5
       EndFrame = 1
